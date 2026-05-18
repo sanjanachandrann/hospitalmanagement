@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang=\"en\">
+<head>
+    <meta charset=\"UTF-8\">
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+    <title>City General Hospital - Compassionate Care, Advanced Medicine</title>
+    <link rel=\"stylesheet\" href=\"hospital-styles.css\">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class=\"top-bar\">
+        <div class=\"container\">
+            <div class=\"top-bar-content\">
+                <div class=\"top-bar-left\">
+                    <div class=\"top-bar-item\">
+                        <svg class=\"icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">
+                            <path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\"/>
+                        </svg>
+                        <span>+1 (555) 123-4567</span>
+                    </div>
+                    <div class=\"top-bar-item\">
+                        <svg class=\"icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">
+                            <circle cx=\"12\" cy=\"12\" r=\"10\"/>
+                            <polyline points=\"12 6 12 12 16 14\"/>
+                        </svg>
+                        <span>24/7 Emergency</span>
+                    </div>
+                </div>
+                <div class=\"top-bar-right\">
+                    Emergency: +1 (555) 911-HELP
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class=\"navbar\" id=\"navbar\">
+        <div class=\"container\">
+            <div class=\"nav-content\">
+                <!-- Logo -->
+                <a href=\"#\" class=\"logo\">
+                    <div class=\"logo-icon\">CG</div>
+                    <div class=\"logo-text\">
+                        <h1>City General Hospital</h1>
+                        <p>Compassionate Care, Advanced Medicine</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class=\"nav-links\" id=\"navLinks\">
+                    <a href=\"#home\" class=\"nav-link\">Home</a>
+                    <a href=\"#about\" class=\"nav-link\">About</a>
+                    <a href=\"#departments\" class=\"nav-link\">Departments</a>
+                    <a href=\"#doctors\" class=\"nav-link\">Doctors</a>
+                    <a href=\"#services\" class=\"nav-link\">Services</a>
+                    <a href=\"#contact\" class=\"nav-link\">Contact</a>
+                </div>
+
+                <!-- CTA Button -->
+                <button class=\"btn btn-primary desktop-only\" onclick=\"scrollToSection('appointment')\">
+                    Book Appointment
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button class=\"mobile-menu-btn\" id=\"mobileMenuBtn\">
+                    <svg class=\"menu-icon\" id=\"menuIcon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">
+                        <line x1=\"3\" y1=\"12\" x2=\"21\" y2=\"12\"/>
+                        <line x1=\"3\" y1=\"6\" x2=\"21\" y2=\"6\"/>
+                        <line x1=\"3\" y1=\"18\" x2=\"21\" y2=\"18\"/>
+                    </svg>
+                    <svg class=\"close-icon hidden\" id=\"closeIcon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">
+                        <line x1=\"18\" y1=\"6\" x2=\"6\" y2=\"18\"/>
+                        <line x1=\"6\" y1=\"6\" x2=\"18\" y2=\"18\"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class=\"mobile-menu hidden\" id=\"mobileMenu\">
+                <a href=\"#home\" class=\"mobile-link\">Home</a>
+                <a href=\"#about\" class=\"mobile-link\">About</a>
+                <a href=\"#departments\" class=\"mobile-link\">Departments</a>
+                <a href=\"#doctors\" class=\"mobile-link\">Doctors</a>
+                <a href=\"#services\" class=\"mobile-link\">Services</a>
+                <a href=\"#contact\" class=\"mobile-link\">Contact</a>
+                <button class=\"btn btn-primary btn-block\" onclick=\"scrollToSection('appointment')\">
+                    Book Appointment
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class=\"hero\" id=\"home\">
+        <div class=\"hero-bg\">
+            <img src=\"https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d\" alt=\"Hospital\">
+            <div class=\"hero-overlay\"></div>
+        </div>
+        <div class=\"container hero-container\">
+            <div class=\"hero-content\">
+                <div class=\"hero-badge\">
+                    <svg class=\"icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">
+                        <circle cx=\"12\" cy=\"8\" r=\"7\"/>
+                        <polyline points=\"8.21 13.89 7 23 12 20 17 23 15.79 13.88\"/>
+                    </svg>
+                    <span>25+ Years of Excellence</span>
+                </div>
+                <h1 class=\"hero-title\">
+                    Your Health,<br>
+                    <span class=\"hero-title-accent\">Our Priority</span>
+                </h1>
+                <p class=\"hero-description\">
+                    Leading healthcare provider with over 25 years of excellence in medical services. 
+                    Our state-of-the-art facility and expert medical team ensure the highest quality of patient care.
+                </p>
+                <div class=\"hero-buttons\">
+                    <button class=\"btn btn-white\" onclick=\"scrollToSection('appointment')\">
+                        Book Appointment
+                        <svg class=\"icon-sm\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">
+                            <line x1=\"5\" y1=\"12\" x2=\"19\" y2=\"12\"/>
+                            <polyline points=\"12 5 19 12 12 19\"/>
+                        </svg>
+                    </button>
+                    <button class=\"btn btn-outline\" onclick=\"scrollToSection('contact')\">
+                        Contact Us
+                    </button>
+                </div>
+                <div class=\"hero-features\">
+                    <div class=\"hero-feature\">
+                        <div class=\"hero-feature-icon\">
+                            <svg class=\"icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">
+                                <circle cx=\"12\" cy=\"12\" r=\"10\"/>
+                                <polyline points=\"12 6 12 12 16 14\"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class=\"hero-feature-title\">24/7</p>
+                            <p class=\"hero-feature-text\">Emergency</p>
+                        </div>
+                    </div>
+                    <div class=\"hero-feature\">
+                        <div class=\"hero-feature-icon\">
+                            <svg class=\"icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">
+                                <path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class=\"hero-feature-title\">Safe</p>
+                            <p class=\"hero-feature-text\">Treatment</p>
+                        </div>
+                    </div>
+                    <div class=\"hero-feature\">
+                        <div class=\"hero-feature-icon\">
+                            <svg class=\"icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">
+                                <circle cx=\"12\" cy=\"8\" r=\"7\"/>
+                                <polyline points=\"8.21 13.89 7 23 12 20 17 23 15.79 13.88\"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class=\"hero-feature-title\">Expert</p>
+                            <p class=\"hero-feature-text\">Doctors</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Emergency Card -->
+            <div class=\"emergency-card desktop-only\">
+                <div class=\"emergency-badge\">Emergency Hotline</div>
+                <h3 class=\"emergency-number\">+1 (555) 911-HELP</h3>
+                <p class=\"emergency-text\">Available 24/7 for medical emergencies</p>
+                <div class=\"emergency-status\">
+                    <div class=\"status-item\">
+                        <div class=\"status-dot\"></div>
+                        <span>Ambulance Service Active</span>
+                    </div>
+                    <div class=\"status-item\">
+                        <div class=\"status-dot\"></div>
+                        <span>Trauma Care Available</span>
+                    </div>
+                    <div class=\"status-item\">
+                        <div class=\"status-dot\"></div>
+                        <span>ICU Beds Ready</span>
+                    </div>
+                </div>
+                <button class=\"btn btn-danger btn-block\">Call Emergency Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class=\"statistics\">
+        <div class=\"container\">
+            <div class=\"stats-grid\">
+                <div class=\"stat-item\">
+                    <div class=\"stat-icon\">
+                        <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">
+                            <path d=\"M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2\"/>
+                            <circle cx=\"9\" cy=\"7\" r=\"4\"/>
+                            <path d=\"M23 21v-2a4 4 0 0 0-3-3.87\"/>
+                            <path d=\"M16 3.13a4 4 0 0 1 0 7.75\"/>
+                        </svg>
+                    </div>
+                    <h3 class=\"stat-value\">50,000+</h3>
+                    <p class=\"stat-label\">Patients Treated</p>
+                </div>
+                <div class=\"stat-item\">
+                    <div class=\"stat-icon\">
+                        <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">
+                            <path d=\"M22 12h-4l-3 9L9 3l-3 9H2\"/>
+                        </svg>
+                    </div>
+                    <h3 class=\"stat-value\">150+</h3>
+                    <p class=\"stat-label\">Expert Doctors</p>
+                </div>
+                <div class=\"stat-item\">
+                    <div class=\"stat-icon\">
+                        <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">
+                            <rect x=\"3\" y=\"3\" width=\"7\" height=\"7\"/>
+                            <rect x=\"14\" y=\"3\" width=\"7\" height=\"7\"/>
+                            <rect x=\"14\" y=\"14\" width=\"7\" height=\"7\"/>
+                            <rect x=\"3\" y=\"14\" width=\"7\" height=\"7\"/>
+                        </svg>
+                    </div>
+                    <h3 class=\"stat-value\">12</h3>
+                    <p class=\"stat-label\">Departments</p>
+                </div>
+                <div class=\"stat-item\">
+                    <div class=\"stat-icon\">
+                        <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">
+                            <circle cx=\"12\" cy=\"8\" r=\"7\"/>
+                            <polyline points=\"8.21 13.89 7 23 12 20 17 23 15.79 13.88\"/>
+                        </svg>
+                    </div>
+                    <h3 class=\"stat-value\">25+</h3>
+                    <p class=\"stat-label\">Years of Service</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class=\"about\" id=\"about\">
+        <div class=\"container\">
+            <div class=\"about-grid\">
+                <div class=\"about-image\">
+                    <img src=\"https://images.pexels.com/photos/18470744/pexels-photo-18470744.jpeg\" alt=\"Hospital Building\">
+                    <div class=\"about-badge\">
+                        <p class=\"badge-number\">27+</p>
+                        <p class=\"badge-text\">Years Serving</p>
+                    </div>
+                </div>
+                <div class=\"about-content\">
+                    <div class=\"section-badge\">About Our Hospital</div>
+                    <h2 class=\"section-title\">Leading Healthcare Provider Since 1998</h2>
+                    <p class=\"section-text\">
+                        Leading healthcare provider with over 25 years of excellence in medical services. 
+                        Our state-of-the-art facility and expert medical team ensure the highest quality of patient care.
+                    </p>
+                    <p class=\"section-text\">
+                        Our commitment to excellence in healthcare has made us a trusted name in the community. 
+                        We combine cutting-edge technology with compassionate care to deliver the best possible outcomes for our patients.
+                    </p>
+                    <div class=\"features-grid\">
+                        <div class=\"feature-item\">
+                            <svg class=\"feature-icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">
+                                <polyline points=\"20 6 9 17 4 12\"/>
+                            </svg>
+                            <span>State-of-the-art medical equipment</span>
+                        </div>
+                        <div class=\"feature-item\">
+                            <svg class=\"feature-icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">
+                                <polyline points=\"20 6 9 17 4 12\"/>
+                            </svg>
+                            <span>Experienced and qualified medical staff</span>
+                        </div>
+                        <div class=\"feature-item\">
+                            <svg class=\"feature-icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">
+                                <polyline points=\"20 6 9 17 4 12\"/>
+                            </svg>
+                            <span>Patient-centered approach to care</span>
+                        </div>
+                        <div class=\"feature-item\">
+                            <svg class=\"feature-icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">
+                                <polyline points=\"20 6 9 17 4 12\"/>
+                            </svg>
+                            <span>Advanced diagnostic facilities</span>
+                        </div>
+                        <div class=\"feature-item\">
+                            <svg class=\"feature-icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">
+                                <polyline points=\"20 6 9 17 4 12\"/>
+                            </svg>
+                            <span>Comfortable and modern patient rooms</span>
+                        </div>
+                        <div class=\"feature-item\">
+                            <svg class=\"feature-icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">
+                                <polyline points=\"20 6 9 17 4 12\"/>
+                            </svg>
+                            <span>Comprehensive health services</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Departments Section -->
+    <section class=\"departments\" id=\"departments\">
+        <div class=\"container\">
+            <div class=\"section-header\">
+                <div class=\"section-badge\">Our Departments</div>
+                <h2 class=\"section-title\">Specialized Medical Departments</h2>
+                <p class=\"section-description\">
+                    Comprehensive healthcare services across multiple specialties with expert medical teams
+                </p>
+            </div>
+            <div class=\"cards-grid\" id=\"departmentsGrid\">
+                <!-- Departments will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class=\"services\" id=\"services\">
+        <div class=\"container\">
+            <div class=\"section-header\">
+                <div class=\"section-badge\">Our Services</div>
+                <h2 class=\"section-title\">Comprehensive Healthcare Services</h2>
+                <p class=\"section-description\">
+                    From emergency care to specialized treatments, we offer a complete range of medical services
+                </p>
+            </div>
+            <div class=\"cards-grid\" id=\"servicesGrid\">
+                <!-- Services will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors Section -->
+    <section class=\"doctors\" id=\"doctors\">
+        <div class=\"container\">
+            <div class=\"section-header\">
+                <div class=\"section-badge\">Our Medical Team</div>
+                <h2 class=\"section-title\">Meet Our Expert Doctors</h2>
+                <p class=\"section-description\">
+                    Our team of highly qualified and experienced medical professionals dedicated to your health
+                </p>
+            </div>
+            
+            <!-- Search and Filter -->
+            <div class=\"search-filter\">
+                <div class=\"search-box\">
+                    <svg class=\"search-icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">
+                        <circle cx=\"11\" cy=\"11\" r=\"8\"/>
+                        <path d=\"m21 21-4.35-4.35\"/>
+                    </svg>
+                    <input type=\"text\" id=\"doctorSearch\" placeholder=\"Search doctors by name or specialization...\">
+                </div>
+                <div class=\"filter-buttons\" id=\"filterButtons\">
+                    <!-- Filter buttons will be loaded by JavaScript -->
+                </div>
+            </div>
+
+            <div class=\"cards-grid\" id=\"doctorsGrid\">
+                <!-- Doctors will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Form Section -->
+    <section class=\"appointment-section\" id=\"appointment\">
+        <div class=\"container\">
+            <div class=\"section-header\">
+                <div class=\"section-badge\">Book Appointment</div>
+                <h2 class=\"section-title\">Schedule Your Visit</h2>
+                <p class=\"section-description\">
+                    Fill in your details and our team will confirm your appointment within 24 hours
+                </p>
+            </div>
+            
+            <div class=\"form-container\">
+                <form class=\"appointment-form\" id=\"appointmentForm\">
+                    <h3 class=\"form-section-title\">Personal Information</h3>
+                    <div class=\"form-row\">
+                        <div class=\"form-group\">
+                            <label for=\"patientName\">Full Name *</label>
+                            <input type=\"text\" id=\"patientName\" required placeholder=\"John Doe\">
+                        </div>
+                        <div class=\"form-group\">
+                            <label for=\"phone\">Phone Number *</label>
+                            <input type=\"tel\" id=\"phone\" required placeholder=\"+1 (555) 123-4567\">
+                        </div>
+                    </div>
+                    <div class=\"form-group\">
+                        <label for=\"email\">Email Address *</label>
+                        <input type=\"email\" id=\"email\" required placeholder=\"john.doe@example.com\">
+                    </div>
+
+                    <h3 class=\"form-section-title\">Appointment Information</h3>
+                    <div class=\"form-row\">
+                        <div class=\"form-group\">
+                            <label for=\"department\">Department *</label>
+                            <select id=\"department\" required>
+                                <option value=\"\">Select department</option>
+                            </select>
+                        </div>
+                        <div class=\"form-group\">
+                            <label for=\"doctor\">Preferred Doctor *</label>
+                            <select id=\"doctor\" required>
+                                <option value=\"\">Select doctor</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class=\"form-row\">
+                        <div class=\"form-group\">
+                            <label for=\"appointmentDate\">Preferred Date *</label>
+                            <input type=\"date\" id=\"appointmentDate\" required>
+                        </div>
+                        <div class=\"form-group\">
+                            <label for=\"appointmentTime\">Preferred Time *</label>
+                            <input type=\"time\" id=\"appointmentTime\" required>
+                        </div>
+                    </div>
+
+                    <h3 class=\"form-section-title\">Insurance Details (Optional)</h3>
+                    <div class=\"form-row\">
+                        <div class=\"form-group\">
+                            <label for=\"insuranceProvider\">Insurance Provider</label>
+                            <input type=\"text\" id=\"insuranceProvider\" placeholder=\"e.g., Blue Cross\">
+                        </div>
+                        <div class=\"form-group\">
+                            <label for=\"policyNumber\">Policy Number</label>
+                            <input type=\"text\" id=\"policyNumber\" placeholder=\"Policy number\">
+                        </div>
+                    </div>
+
+                    <h3 class=\"form-section-title\">Medical Information</h3>
+                    <div class=\"form-group\">
+                        <label for=\"medicalHistory\">Medical History (Optional)</label>
+                        <textarea id=\"medicalHistory\" rows=\"3\" placeholder=\"Any chronic conditions, allergies, or ongoing medications...\"></textarea>
+                    </div>
+                    <div class=\"form-group\">
+                        <label for=\"reason\">Reason for Visit *</label>
+                        <textarea id=\"reason\" rows=\"3\" required placeholder=\"Brief description of your symptoms or reason for consultation...\"></textarea>
+                    </div>
+
+                    <button type=\"submit\" class=\"btn btn-primary btn-block btn-lg\">Book Appointment</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class=\"testimonials\">
+        <div class=\"container\">
+            <div class=\"section-header\">
+                <div class=\"section-badge\">Patient Testimonials</div>
+                <h2 class=\"section-title\">What Our Patients Say</h2>
+                <p class=\"section-description\">
+                    Real experiences from real patients who trusted us with their healthcare
+                </p>
+            </div>
+            <div class=\"testimonials-grid\" id=\"testimonialsGrid\">
+                <!-- Testimonials will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class=\"faq\">
+        <div class=\"container\">
+            <div class=\"section-header\">
+                <div class=\"section-badge\">FAQ</div>
+                <h2 class=\"section-title\">Frequently Asked Questions</h2>
+                <p class=\"section-description\">
+                    Find answers to common questions about our services and facilities
+                </p>
+            </div>
+            <div class=\"faq-container\" id=\"faqContainer\">
+                <!-- FAQ items will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class=\"gallery\">
+        <div class=\"container\">
+            <div class=\"section-header\">
+                <div class=\"section-badge\">Our Facilities</div>
+                <h2 class=\"section-title\">Hospital Gallery</h2>
+                <p class=\"section-description\">
+                    Take a visual tour of our state-of-the-art facilities and modern infrastructure
+                </p>
+            </div>
+            <div class=\"gallery-grid\" id=\"galleryGrid\">
+                <!-- Gallery items will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class=\"contact\" id=\"contact\">
+        <div class=\"container\">
+            <div class=\"section-header\">
+                <div class=\"section-badge\">Contact Us</div>
+                <h2 class=\"section-title\">Get In Touch</h2>
+                <p class=\"section-description\">
+                    Have questions? We're here to help. Reach out to us anytime.
+                </p>
+            </div>
+            <div class=\"contact-grid\">
+                <div class=\"contact-form-container\">
+                    <form class=\"contact-form\" id=\"contactForm\">
+                        <h3>Send Us a Message</h3>
+                        <div class=\"form-group\">
+                            <label for=\"contactName\">Your Name *</label>
+                            <input type=\"text\" id=\"contactName\" required placeholder=\"John Doe\">
+                        </div>
+                        <div class=\"form-group\">
+                            <label for=\"contactEmail\">Email Address *</label>
+                            <input type=\"email\" id=\"contactEmail\" required placeholder=\"john@example.com\">
+                        </div>
+                        <div class=\"form-group\">
+                            <label for=\"subject\">Subject *</label>
+                            <input type=\"text\" id=\"subject\" required placeholder=\"How can we help?\">
+                        </div>
+                        <div class=\"form-group\">
+                            <label for=\"message\">Message *</label>
+                            <textarea id=\"message\" rows=\"5\" required placeholder=\"Your message...\"></textarea>
+                        </div>
+                        <button type=\"submit\" class=\"btn btn-primary btn-block\">Send Message</button>
+                    </form>
+                </div>
+
+                <div class=\"contact-info\">
+                    <div class=\"contact-card\">
+                        <div class=\"contact-icon\">
+                            <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">
+                                <path d=\"M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z\"/>
+                                <circle cx=\"12\" cy=\"10\" r=\"3\"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Medical Center Drive, Healthcare City, HC 12345</p>
+                        </div>
+                    </div>
+                    <div class=\"contact-card\">
+                        <div class=\"contact-icon\">
+                            <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">
+                                <path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class=\"contact-card\">
+                        <div class=\"contact-icon\">
+                            <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">
+                                <path d=\"M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z\"/>
+                                <polyline points=\"22,6 12,13 2,6\"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@citygeneralhospital.com</p>
+                        </div>
+                    </div>
+                    <div class=\"contact-map\">
+                        <iframe
+                            src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1841!2d-73.9867!3d40.7484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ0JzU0LjIiTiA3M8KwNTknMTIuMSJX!5e0!3m2!1sen!2sus!4v1234567890\"
+                            width=\"100%\"
+                            height=\"250\"
+                            style=\"border:0; border-radius: 8px;\"
+                            allowfullscreen=\"\"
+                            loading=\"lazy\">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class=\"footer\">
+        <div class=\"container\">
+            <div class=\"footer-grid\">
+                <div class=\"footer-col\">
+                    <div class=\"footer-logo\">
+                        <div class=\"logo-icon\">CG</div>
+                        <h3>City General Hospital</h3>
+                    </div>
+                    <p class=\"footer-tagline\">Compassionate Care, Advanced Medicine</p>
+                    <div class=\"footer-contact\">
+                        <p>123 Medical Center Drive, Healthcare City, HC 12345</p>
+                        <p>+1 (555) 123-4567</p>
+                        <p>info@citygeneralhospital.com</p>
+                    </div>
+                </div>
+                <div class=\"footer-col\">
+                    <h4>Quick Links</h4>
+                    <ul class=\"footer-links\">
+                        <li><a href=\"#about\">About Us</a></li>
+                        <li><a href=\"#departments\">Departments</a></li>
+                        <li><a href=\"#doctors\">Doctors</a></li>
+                        <li><a href=\"#services\">Services</a></li>
+                    </ul>
+                </div>
+                <div class=\"footer-col\">
+                    <h4>Departments</h4>
+                    <ul class=\"footer-links\">
+                        <li><a href=\"#departments\">Cardiology</a></li>
+                        <li><a href=\"#departments\">Neurology</a></li>
+                        <li><a href=\"#departments\">Orthopedics</a></li>
+                        <li><a href=\"#departments\">Pediatrics</a></li>
+                        <li><a href=\"#departments\">Emergency</a></li>
+                    </ul>
+                </div>
+                <div class=\"footer-col\">
+                    <h4>Emergency Contact</h4>
+                    <div class=\"emergency-box\">
+                        <p>24/7 Emergency Hotline</p>
+                        <h3>+1 (555) 911-HELP</h3>
+                    </div>
+                    <h4>Follow Us</h4>
+                    <div class=\"social-links\">
+                        <a href=\"#\" aria-label=\"Facebook\">
+                            <svg viewBox=\"0 0 24 24\" fill=\"currentColor\">
+                                <path d=\"M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z\"/>
+                            </svg>
+                        </a>
+                        <a href=\"#\" aria-label=\"Twitter\">
+                            <svg viewBox=\"0 0 24 24\" fill=\"currentColor\">
+                                <path d=\"M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z\"/>
+                            </svg>
+                        </a>
+                        <a href=\"#\" aria-label=\"Instagram\">
+                            <svg viewBox=\"0 0 24 24\" fill=\"currentColor\">
+                                <rect x=\"2\" y=\"2\" width=\"20\" height=\"20\" rx=\"5\" ry=\"5\"/>
+                                <path d=\"M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z\"/>
+                                <line x1=\"17.5\" y1=\"6.5\" x2=\"17.51\" y2=\"6.5\"/>
+                            </svg>
+                        </a>
+                        <a href=\"#\" aria-label=\"LinkedIn\">
+                            <svg viewBox=\"0 0 24 24\" fill=\"currentColor\">
+                                <path d=\"M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z\"/>
+                                <rect x=\"2\" y=\"9\" width=\"4\" height=\"12\"/>
+                                <circle cx=\"4\" cy=\"4\" r=\"2\"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=\"footer-bottom\">
+            <div class=\"container\">
+                <p>&copy; 2024 City General Hospital. All rights reserved.</p>
+                <p>Made with ❤️ for better healthcare</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class=\"toast hidden\" id=\"toast\">
+        <div class=\"toast-content\">
+            <strong id=\"toastTitle\">Success!</strong>
+            <p id=\"toastMessage\">Your request has been processed.</p>
+        </div>
+    </div>
+
+    <script src=\"hospital-script.js\"></script>
+</body>
+</html>
